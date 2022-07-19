@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap');
+:root{
+
+--Soft-blue: hsl(215, 51%, 70%);
+--Cyan: hsl(178, 100%, 50%);
+
+--main-bg: hsl(217, 54%, 11%);
+--card-bg: hsl(216, 50%, 16%);
+--line:hsl(215, 32%, 27%);
+--white: hsl(0, 0%, 100%);
+}
+.attribution { 
+    bottom: 0;
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-size: 18px;
+    font-family: 'Outfit', sans-serif;
+    background-color: hsl(217, 54%, 11%);
+}
+/* whole box or card  */
+.nft-card{
+    margin: 1.5rem auto 1.5rem auto;
+    background-color: var(--card-bg);
+    display: flex;
+    border-radius: 0.9rem;
+    flex-direction: column;
+    max-width: 20rem;
+    justify-content: center;
+    text-align: left;
+    padding: 1.3rem;   
+}
+.nft-image{
+    position: relative;
+}
+.nft-image img{
+    width: 100%;
+    border-radius: 1.1rem;
+
+}
+.nft-image:hover{
+    cursor:pointer;
+    
+}
+.nft-image-cover{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    width: 100%;
+    height: 99%;
+    background-color: var(--Cyan);
+    opacity: 0;
+    border-radius: 1.1rem;
+}
+.nft-image-cover:hover{
+    opacity: 0.5;
+}
+.nft-image-cover img{
+    z-index: 2;
+    width: 50px;
+}
+
+/* Equilibrium text */
+.eq-head{
+    cursor: pointer;
+    padding-top: 1.5rem;
+    padding-bottom: 1.5rem;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--white);
+}
+
+.eq-head:hover{
+    color: var(--Cyan);
+}
+
+/* Our Equilibrium collection promotes balance and calm text */
+.description{
+    padding-bottom: 1.5rem;
+    font-weight:300;
+    color:var(--Soft-blue);
+}
+
+/* 0.041 ETH & 3 days left text*/
+.days-left{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-bottom: 1.5rem;
+    border-bottom: 0.1rem solid white;
+}
+
+/* 0.041 ETH & 3 days left icons */
+.days-left img{
+    padding-right: 0.3rem;
+}
+
+/* 3 days left text*/
+.days{    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 300;
+    color:var(--Soft-blue);
+}
+
+/* 0.041 ETH text */
+.ETH{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 400;
+    color: var(--Cyan);
+}
+
+/* Creation of Jules Wyvern text */
+.credits{
+    padding-top: 1.5rem;
+    display: flex;
+ 
+    justify-items: center;
+    align-items: center;
+
+}
+.credits img{
+    max-width:2rem ;
+    border: solid 0.1rem white;
+    border-radius: 1rem;
+}
+.jules-wyvern{
+    padding: 0.1rem;
+    color: var(--white);
+}
+.jules-wyvern:hover{
+    cursor: pointer;
+    color: var(--Cyan);
+}
+.credits p {
+    color:var(--Soft-blue);
+    text-align: center;
+    padding-left: 1rem;
+}
+
